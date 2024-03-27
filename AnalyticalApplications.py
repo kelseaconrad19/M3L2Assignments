@@ -5,25 +5,25 @@ Task 1: Stock Prices
 """
 
 
-# def calc_average(stocks):
-#     closing_prices = []
-#     for ele in stocks:
-#         closing_price = ele[-1]
-#         closing_prices.append(closing_price)
-#     total = sum(closing_prices)
-#     num = len(closing_prices)
-#     average = round((total / num), 2)
-#     return average
-#
-#
-# stock_data = [
-#     ("AAPL", "2021-01-01", 130.0),
-#     ("AAPL", "2021-01-02", 132.0),
-#     ("MSFT", "2021-01-01", 220.0),
-# ]
-#
-# if __name__ == "__main__":
-#     print(calc_average(stock_data))
+def calc_average(stocks):
+    closing_prices = []
+    for ele in stocks:
+        closing_price = ele[-1]
+        closing_prices.append(closing_price)
+    total = sum(closing_prices)
+    num = len(closing_prices)
+    average = round((total / num), 2)
+    return average
+
+
+stock_data = [
+    ("AAPL", "2021-01-01", 130.0),
+    ("AAPL", "2021-01-02", 132.0),
+    ("MSFT", "2021-01-01", 220.0),
+]
+
+if __name__ == "__main__":
+    print(calc_average(stock_data))
 
 
 """
